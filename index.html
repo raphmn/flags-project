@@ -12,7 +12,9 @@
 <body>
     <div class="container mb-4">
         <header class="my-4">
-            <h1 class="text-center">Drapeaux du monde 🌍</h1>
+            <h1 class="text-center"><b>Flags Repository</b></h1>
+            <div class="alert alert-info mt-5">Découvrez les drapeaux du monde. Laissez votre curseur sur un de ces drapeaux pour zoomer et afficher les informations détaillées.</div>
+            <hr>
         </header>
         <main>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 flags-container">
@@ -22,9 +24,10 @@
         
     </div>
     <div class="container d-flex justify-content-center my-4" id="load-more">
-        <button class="btn btn-primary d-flex justify-content-center align-items-center">Charger plus de drapeaux</button>
+        <button class="btn text-white bg-black d-flex justify-content-center align-items-center">Charger plus de drapeaux</button>
         </div>
     
+    <div id="dim" style="display: none;"></div>
 
     <script src="/js/main.js" defer></script>
 </body>

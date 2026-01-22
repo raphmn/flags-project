@@ -1,0 +1,77 @@
+.card img
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: ease-in 0.25s;
+    border-radius: 15px;
+}
+
+.card:hover img:hover
+{
+    transform: scale(1.12);
+    transition: ease-in 0.25s;
+    overflow: hidden;   
+}
+
+button
+{
+    transform: ease-in-out 0.25s;
+}
+
+button:hover
+{
+    color: black !important;
+    border: 1px solid black !important;
+    background-color: white !important;
+    transform: ease-in-out 0.25s;
+}
+
+#dim
+{
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+#active-modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    z-index: 9999;
+    min-width: 300px;
+    text-align: center;
+    background-color: white;
+    pointer-events: none;
+
+    animation: fadeInModal 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
